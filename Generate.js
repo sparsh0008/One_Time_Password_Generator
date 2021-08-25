@@ -8,7 +8,8 @@ function generateOTP() {
     for (let i = 0; i < 4; i++ ) {
         OTP += digits[Math.floor(Math.random() * 10)];
     }
-    console.log(OTP);
+    //console.log(OTP);
+    outputDiv.textContent = "OTP : " + OTP;
 };
 
 btnTranslate.addEventListener("click", generateOTP);
